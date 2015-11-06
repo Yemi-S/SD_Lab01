@@ -1,0 +1,12 @@
+/*Ejecucion OpenMP*/
+$ gcc -o omp_helloc -fopenmp omp_hello.c
+$ export OMP_NUM_THREADS=2
+$ ./omp_helloc
+
+
+sudo apt-get install libcr-dev mpich2 mpich2-doc
+$ mpicc mpi_hello.c -o hello
+$ mpirun -np 2 ./hello
+
+$ gcc pthread.c -lpthread -o ejem_pthread
+$ ./ejem_pthread
